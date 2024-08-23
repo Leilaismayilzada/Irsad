@@ -1,0 +1,113 @@
+.nav {
+    background-color: rgb(255, 255, 255);
+
+
+    &__left {
+
+        padding: 0 11px;
+
+        &__img {
+            img {
+                width: 96px;
+                height: 44px;
+            }
+        }
+    }
+
+    &__mid {
+        @include Flexible(flex-start, flex-start, row, wrap, 10px);
+
+        .catalog {
+            border: 1px solid black;
+            padding: 15px 10px;
+            width: 120px;
+            border-radius: 7px;
+            background-color: $green_color;
+            color: white;
+            font-size: 14px;
+
+            i {
+                font-size: 20px;
+            }
+        }
+
+        .search {
+            width: 469px;
+            height: 57px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+            outline: none;
+
+
+
+            input {
+                padding: auto 0;
+                padding-left: 35px;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                border-radius: 10px;
+
+
+            }
+
+            i {
+
+                padding: 10px px;
+                font-size: 18px;
+                margin: 20px 20px;
+                color: $grey_color_dark;
+
+
+            }
+        }
+    }
+
+.icons{
+    display: flex;
+    gap: 20px
+   
+}
+    &__icon {
+        @include Flexible(center, center, row, wrap, 30px);
+        text-align: center;
+        font-size: 14px;
+   &__libra{
+    &:hover {
+        transition: 0.4s ease-in-out;
+        color: orange;
+      }
+      }
+   &__heart{
+    &:hover { transition: 0.4s ease-in-out;
+        color: orange;
+      }
+
+    }
+    &__bag{
+        &:hover { transition: 0.4s ease-in-out;
+            color: orange;
+          }
+      }}
+
+    &__annual {
+        
+        border: 2px solid $green_color;
+        padding: 13px 0px;
+        width: 140px;
+        border-radius: 5px;
+        color: $green_color;
+        font-size: 13px;
+        text-align: center;
+        transition: 0.5s ease-in-out;
+        &:hover{
+            color: white;
+            background-color: $green_color;
+
+        }
+    
+    }
+}
+

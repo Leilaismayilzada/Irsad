@@ -1,0 +1,147 @@
+#header {
+padding: 0px 10px;
+max-width: 1440px;
+width: 100%;
+
+    .logo {
+        @include Flexible(center, flex-start, row, wrap, 20px);
+        &__text {
+            @include Flexible(center, flex-start, row, wrap, 15px);
+            margin-top: 20px;
+            p {
+                font-weight: 200;
+                font-size: 11.44px;
+                color: $grey_color_dark;
+            }
+
+        }
+
+        &__img {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            img {
+                width: 79px;
+                height: 14px;
+                object-fit: contain;
+               
+
+            }
+            .img2{
+                img{
+                    height: 30px
+                }
+            }
+            .img3{
+                img{
+                    height: 20px
+                }
+            }
+
+        }
+
+        &__buttons {
+            @include Flexible(center, center, row, wrap, 20px);
+
+            button {
+                padding: 3.52px 8.8px;
+                font-size: 11.44px;
+                border-radius: 8px;
+                border: 1px solid $orange_color;
+                background-color: rgb(255, 255, 255);
+                color: $orange_color;
+                transition: 0.4s ease-in-out;
+                &:hover {
+                    opacity: 1;
+                    visibility: visible;
+                    color: rgb(255, 255, 255);
+                    background-color: $orange_color;
+                }
+            }
+        }
+
+
+
+    }
+    .right{
+        display: flex;
+        align-items: baseline;
+        
+        &__img {
+            @include Flexible(center, baseline, row, wrap, 10px);
+         
+         
+        
+         
+
+            img{
+                width: 60px;
+                height: 19px;
+                object-fit: contain;
+               
+            }
+        }
+        &__flags{
+            display: flex;
+            align-items: baseline;
+            
+
+
+            li{ @include Flexible(center, center, row, wrap, 10px);
+            position: relative;
+            cursor: pointer;
+
+
+
+                img{
+                    width: 24px;
+                    height: 16px;
+                    
+                }
+                p{
+                    margin-top: 15px;
+                    font-size: 11.44px;
+                    
+                    
+                }
+               
+            }
+            li{ 
+                .sublang{     
+                @include Flexible(center, center, row, wrap, 10px);
+            
+                position: absolute;
+                width: 170px;
+                border: 1px solid $grey_color;
+                border-radius: 6px;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+               margin-top: 20px;
+                align-items: center;
+                transition: 0.6s ease-in-out;
+                opacity: 0;
+                visibility: hidden;
+            }
+            }
+            &:hover .sublang{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        &__user{
+            margin-left: 50px;
+            
+           &__txt{
+            @include Flexible(baseline, baseline, row, wrap, 10px);
+        
+            i{
+                width: 14px;
+                height: 18px;
+            }
+            span{
+                font-size: 12.44px;
+            }
+           }
+        }
+    }
+}

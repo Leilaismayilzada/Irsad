@@ -1,0 +1,118 @@
+.form_head {
+    display: flex;
+    @include Flexible(flex-start, baseline, row, wrap, 10px);
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+
+    h6 {
+        color: $grey_color_dark;
+        font-weight: 400;
+        margin-top: 2px;
+    }
+
+    i {
+        margin-top: 8px;
+        font-size: 10px;
+        color: $grey_color;
+    }
+
+    h5 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+
+.form {
+    display: flex;
+    border: 1px solid rgb(240, 212, 212);
+    max-width: 1440px;
+    width: 100%;
+    height: 600px;
+    margin: 0 30px;
+    box-shadow: 0 0 7px gray;
+    border-radius: 10px;
+.left_list{
+    border: 1px solid black;
+}
+   .left_end{
+   margin-left: 30px;
+  
+p{
+    color: $orange_color;
+    align-items: baseline;
+   
+}
+.left_end__input{
+ 
+    input{
+        border: none;
+        width: 130px;
+       padding: 10px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 7px gray;
+        margin-left: 5px;
+        outline: none;
+    }
+}
+   }
+   .right_title{
+    display: flex;
+    border: 1px solid rgb(233, 0, 0);
+    justify-content: space-between;
+    width: 960px;
+    align-items: center;
+    &__main{
+        span{
+           color:$grey_color;
+        }
+        select{
+            border: none;
+            outline: none;
+        }
+    }
+    &__left{
+
+    @include Flexible(center, baseline, row, wrap, 19px);
+        display: flex;
+        width: 320px;
+       align-items: center;
+        p{
+            margin-top: 10px;
+            color: $grey_color_dark;
+            i{
+                font-size: 20px;
+                color: $orange_color;
+                border: none;
+            }
+        }
+        i{
+            padding: 10px;
+            font-size: 20px;
+            color: $grey_color_dark;
+        }
+    }
+    }
+    .cards{
+       display: flex;
+       background-color: rgb(79, 122, 160);
+     
+     &__first{
+        display: flex;
+      color: aqua; display: flex;
+      margin-left:250px ;
+      width: 300px;
+      
+
+       &__icons{
+        border: 1px solid rgb(92, 29, 29);
+        i{
+            margin-left: 100px;
+        }
+       }
+     }
+    
+     
+    }
+   }
+    

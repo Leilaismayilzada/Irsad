@@ -1,0 +1,65 @@
+.depend{
+background-color: rgb(255, 255, 255);
+width: 100%;
+padding: 20px;
+
+   &__head{
+    padding: 20px;
+    display: flex;
+    
+    h3{
+        font-size: 30px;
+    }
+   }
+   &__main{
+    padding: 20px 20px;
+    width: 400px;
+    height: 600px;
+    border: 2px solid black;
+    
+    &__icons{
+        margin-left: 270px;
+        display: flex;
+        gap: 20px;
+        transition: 0.5s ease-in-out;
+        &:hover{
+            color: $orange_color;
+        }
+        i{
+             font-size: 30px;
+             color: $grey_color_dark;
+        }
+    }
+    &__img{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       img{
+        width: 270px;
+        height: 270px;
+       }
+    }
+    &__txt{
+        span{
+            font-size: 20px;
+            color: $grey_color;
+            font-weight: 200;
+        }
+        p{
+            font-weight: 600;
+            font-size: 20px;
+        }
+        ul{
+            display: flex;
+            justify-content: flex-start;
+            gap: 3px;
+            li{
+                font-size: 20px;
+                color: $grey_color;
+            }
+        }
+
+    }
+   }
+    }
